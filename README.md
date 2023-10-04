@@ -127,6 +127,12 @@ nvim .bash_profile
     fi
 
 nvim .xinitrc
+    # раскладка
+    setxkbmp -layout "us,ru" -option "grp:alt_shift_toggle"
+    # отключаем режим энергосбережения и блокировку экрана
+    xset s off
+    xset -dpms
+    # slstatus, dwm
     exec slstaus &
     dwm
 ```

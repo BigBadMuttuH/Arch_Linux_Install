@@ -132,6 +132,8 @@ nvim .xinitrc
     # отключаем режим энергосбережения и блокировку экрана
     xset s off
     xset -dpms
+    # переменная окружения для Java
+    export _JAVA_AWT_WM_NONREPARENTING=1
     # slstatus, dwm
     exec slstaus &
     dwm

@@ -104,7 +104,7 @@ yay -Syu neovim
 
 ## dwm, st, slstatus, dmenu
 ```bash
-sudo pacman -S xorg xorg-xinit ttf-font-awesome terminus-font
+sudo pacman -S xorg xorg-xinit nerd-fonts
 # sudo pacman -S xorg-server xorg-xinit libx11 libxinerame libxft webkit2gtk ttf-font-awesome
 mkdir suckless
 cd suckless

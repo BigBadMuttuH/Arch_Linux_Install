@@ -43,7 +43,7 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 4. Настройка
 ```bash
 arch-chroot /mnt
-pacman -Sy vim bash-completion
+pacman -Sy vim
 EDITOR=vim
 # часовой пояс
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -94,7 +94,6 @@ reboot
 ```
 
 
-
 ### yay install
 ```bash
 sudo pacman -Sy git  
@@ -103,7 +102,12 @@ cd yay
 makepkg -si
 yay -Syu neovim
 ```
-
+### bash-completion и fzf
+```bash
+yay -S fzf
+sudo pacman -S bash-completion
+source /usr/share/bash-completion/bash_completion
+```
 ## dwm, st, slstatus, dmenu
 ```bash
 sudo pacman -S xorg xorg-xinit nerd-fonts

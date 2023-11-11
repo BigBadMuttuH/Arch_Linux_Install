@@ -142,5 +142,5 @@ nvim .xinitrc
     export _JAVA_AWT_WM_NONREPARENTING=1
     # slstatus, dwm
     exec slstaus &
-    dwm
+    exec dwm
 ```

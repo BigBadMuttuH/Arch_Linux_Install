@@ -15,6 +15,8 @@ lsbls
 gdisk /dev/sda
 x # экспертный режим
 z # удаляем GPT
+# альтернативный вариант
+wipefs -a /dev/sda
 ```
 2. Размечаем диск
 ```bash
@@ -63,7 +65,7 @@ pacman -S dhcpcd
 systemctl enable dhcpcd.service
 # Пользователи
 passwd # ставим пароль
-useradd -m -g users -G wheel,video -s /bin/bash overlord
+useradd -m -g users -G wheel,audio,video,optical,storage -s /bin/bash overlord
 pacman -S sudo
 visudo
 # разкомментировать

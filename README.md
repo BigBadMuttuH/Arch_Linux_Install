@@ -11,7 +11,7 @@ timedatectl set-timezone Europe/Moscow
 ```bash
 # смотрим диск, на который хотим поставить, в нашем случае
 fdisk -l # или
-lsbls 
+lsblk 
 gdisk /dev/sda
 x # экспертный режим
 z # удаляем GPT
@@ -79,7 +79,7 @@ vim /boot/loader/loader.conf
     timeout 5
     console-mode keep
     default arch
-vim /boot/loader/etries/arch.conf
+vim /boot/loader/entries/arch.conf
     title   ARCH
     linux   /vmlinuz-linux
     initrd  /initramfs-linux.img
@@ -128,7 +128,7 @@ sudo make clean install
 ## exec startx, dwm, slstatus
 ```bash
 nvim .bash_profile
-    if [ -z "${DISPLAY}"] && [ "${XDG_VTNR}" -eq 1 ]; then
+    if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
         exec startx
     fi
 

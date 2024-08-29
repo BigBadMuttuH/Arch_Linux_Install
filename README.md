@@ -144,3 +144,7 @@ nvim .xinitrc
     exec slstaus &
     exec dwm
 ```
+## x11 keyboard layout 
+```bash
+localectl --no-convert set-x11-keymap us,ru "" "" grp:alt_shift_toggle
+```

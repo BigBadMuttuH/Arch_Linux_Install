@@ -144,7 +144,8 @@ nvim .xinitrc
     exec slstaus &
     exec dwm
 ```
-## x11 keyboard layout 
+## Hyprland keyboard layout 
 ```bash
-localectl --no-convert set-x11-keymap us,ru "" "" grp:alt_shift_toggle
+localectl --no-convert set-x11-keymap ru,us pc104 ,dvorak grp:lalt_lshift_toggle
+hyprctl keyword input:kb_layout us,ru
 ```

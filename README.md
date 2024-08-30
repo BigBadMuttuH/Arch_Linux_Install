@@ -146,6 +146,6 @@ nvim .xinitrc
 ```
 ## Hyprland keyboard layout 
 ```bash
-localectl --no-convert set-x11-keymap ru,us pc104 ,dvorak grp:lalt_lshift_toggle
+localectl --no-convert set-x11-keymap ru,us "", "" grp:lalt_lshift_toggle
 hyprctl keyword input:kb_layout us,ru
 ```

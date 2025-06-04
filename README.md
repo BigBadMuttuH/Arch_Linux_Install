@@ -88,8 +88,8 @@ vim /boot/loader/entries/arch.conf
 
 ```bash
 exit
-umont -R /mnt/boot
-umont -R /mnt
+umount -R /mnt/boot
+umount -R /mnt
 reboot
 ```
 
@@ -134,14 +134,14 @@ nvim .bash_profile
 
 nvim .xinitrc
     # раскладка
-    setxkbmp -layout "us,ru" -option "grp:alt_shift_toggle"
+    setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
     # отключаем режим энергосбережения и блокировку экрана
     xset s off
     xset -dpms
     # переменная окружения для Java
     export _JAVA_AWT_WM_NONREPARENTING=1
     # slstatus, dwm
-    exec slstaus &
+    exec slstatus &
     exec dwm
 ```
 ## Hyprland keyboard layout 
